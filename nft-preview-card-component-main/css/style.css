@@ -1,0 +1,89 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --veryDarkBlueMain: hsl(217, 54%, 11%);
+  --veryDarkBluecard: hsl(216, 50%, 16%);
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+*{
+  box-sizing: border-box;
+}
+
+ body{
+  background-color: var(--veryDarkBlue);
+ 	font-size: 18px;
+ 	font-family: "Outfit", sans-serif;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	height: 100vh;
+  padding: 0;
+  margin: 0;
+ }
+
+
+ .card {
+ 	background-color: var(--darkBlue);
+ 	border-radius: 1.5em;
+ 	width: 90%;
+ 	padding: 1.5rem;
+ 	margin: 2em auto;
+ }
+
+ .heading {
+  margin-bottom: 0.5em;
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+.paragraph {
+  line-height: 1.7em;
+  margin-top: 0;
+  font-size: 0.9rem;
+  color: var(--lightGrey);
+}
+
+
+#col {
+  column-count: 2;
+}
+
+.circle {
+  background-color: var(--mediumGrey);
+  border-radius: 50%;
+  padding: 0.8em 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.circle:hover {
+  background-color: var(--lightGrey);
+  color: var(--white);
+}
+
+/*styles when clicked*/
+.circle:active {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/*added class with JS to the selected rating*/
+.selected {
+  background-color: var(--lightGrey);
+  color: var(--white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media all and (min-width: 375px) {
+  .card {
+    padding: 1.9em;
+    width: 400px;
+  }
+}
